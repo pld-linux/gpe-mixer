@@ -1,5 +1,5 @@
-#
 Summary:	GPE mixer
+Summary(pl.UTF-8):	Mikser GPE
 Name:		gpe-mixer
 Version:	0.42
 Release:	1
@@ -7,17 +7,17 @@ License:	GPL
 Group:		Applications/Communications
 Source0:	http://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.gz
 # Source0-md5:	41b1ef201e4583e55a7462f1404de70d
-URL:		http://gpe.linuxtogo.org
+URL:		http://gpe.linuxtogo.org/
 BuildRequires:	gtk+2-devel >= 2:2.10.7
 BuildRequires:	libgpewidget-devel
-BuildRequires:  sed >= 4.0
 Requires:	gpe-icons
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define gpename %(echo %{name} | sed -e 's/gpe-//')
-
 %description
-GPE mixer, for embedded devices
+GPE mixer, for embedded devices.
+
+%description -l pl.UTF-8
+Mikser GPE dla urządzeń wbudowanych.
 
 %prep
 %setup -q
